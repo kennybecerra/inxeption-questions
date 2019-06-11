@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kenny answers to Questions</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="question-css">
+        <div class="description">
+          <h1 class="description__title">Approach</h1>
+          <p class="description__text">
+            Because there were no restriction on what technologies I should use (i.e. plain css,
+            flexbox, CSS Grid, or libraries like bootstrap etc.) I looked at the Inxeption website
+            and it seems that flexbox is being used so I will use that. I will also use SASS
+            pre-processor since it helps with developing the css and makes it more legible
+          </p>
+        </div>
+        <div class="row">
+          <div class="row__section">
+            <div class="row__section__sub--1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime molestias
+              totam, rem hic id suscipit mollitia nisi quod dolore in eos deleniti, aperiam laborum
+              molestiae temporibus quae inventore vero.
+            </div>
+            <div class="row__section__sub--2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint harum veritatis
+              maiores nisi quo! Error reprehenderit, sequi delectus perferendis ullam excepturi
+              mollitia, expedita laboriosam voluptatum cupiditate molestiae architecto asperiores.
+              Excepturi minima fugiat corporis blanditiis. Ratione laboriosam, fuga porro facere
+              explicabo beatae, voluptatibus animi vel possimus quas voluptas officiis expedita
+              laudantium eligendi distinctio molestias amet illo, ab officia dicta similique. Atque
+              ut rerum voluptates architecto qui dolorum quia quod magnam accusantium, repellat
+              ipsum molestias neque libero iusto velit odio optio perferendis, enim quibusdam
+              provident distinctio. Accusantium nobis est pariatur tenetur? Accusantium atque facere
+              corporis eius saepe consequuntur voluptatum ipsa quas voluptatem ipsam reprehenderit
+              veniam libero accusamus veritatis iste, nam optio laudantium maxime ut! Cum illum
+              incidunt sed excepturi asperiores eius.
+            </div>
+            <div class="row__section__sub--3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, magnam? Repudiandae id
+              magni est. Ducimus aspernatur earum commodi temporibus cupiditate autem sit excepturi,
+              doloribus velit deserunt natus eaque, quaerat blanditiis?
+            </div>
+          </div>
+          <div class="row__section">
+            <div class="row__section__sub--1">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo pariatur ipsam nulla
+              distinctio. Amet sapiente, dolore voluptatem veniam voluptatibus, temporibus maiores
+              exercitationem neque laborum asperiores quas voluptatum esse provident ab?
+            </div>
+            <div class="row__section__sub--2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, distinctio
+              facere deserunt at sit unde rem maiores fugit esse perspiciatis maxime nostrum. Eius
+              praesentium magnam quis, architecto aut vitae inventore.
+            </div>
+            <div class="row__section__sub--3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in,
+              praesentium nisi quas consectetur debitis voluptatum. Consectetur, nemo error. Ad
+              culpa maiores officia sint cupiditate facere adipisci quaerat voluptatem nemo.
+            </div>
+          </div>
+          <div class="row__section">
+            <div class="row__section__sub--1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit accusamus
+              impedit minus amet placeat error recusandae fugit animi ea, quidem corrupti atque sit
+              nesciunt nisi dicta ad expedita tenetur.
+            </div>
+            <div class="row__section__sub--2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, exercitationem atque?
+              Aperiam non consequatur fuga odit, error iure quisquam corporis cumque minus, vel
+              dolore dolorem, iusto labore repellat delectus eveniet.
+            </div>
+            <div class="row__section__sub--3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis, natus
+              numquam assumenda sunt obcaecati. Quis magni pariatur blanditiis nobis id quos atque
+              minus eligendi facilis adipisci dolores, eaque doloribus.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question-javascript">
+        <div class="description">
+          <h1 class="description__title">Approach</h1>
+          <p class="description__text">
+            This is a closure issue, there are actually 2 ways to solve this. The nice Es6 way, or
+            using function scoping to ensure that each button will log the correct value at the time
+            that it was ran
+          </p>
+
+          <h3 class="description__title">Using functional scope</h3>
+          <pre>
+              <code>
+                var buttons = document.querySelectorAll('button'); 
+                
+                function showNum(node , num) { 
+                    node.addEventListener('click', function(e) { 
+                        console.log('clicked on ', num) 
+                    }) 
+                } 
+                for (var i = 0; i &lt; buttons.length; i++) { 
+                    showNum(buttons[i], i); 
+                }
+              </code>
+            </pre>
+          <h3 class="description__title">Using Es6 let variables</h3>
+
+          <pre>
+            <code>
+                var buttons = document.querySelectorAll('button'); 
+                
+                for (let i = 0; i &lt; buttons.length; i++) {
+                    buttons[i].addEventListener('click', function () { 
+                        console.log('clicked on ', i);
+                    });
+                }
+            </code>
+        </pre>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
